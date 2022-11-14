@@ -1,12 +1,16 @@
 import React from "react";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import {updateTuitThunk} from "../services/tuits-thunks.js";
+import {useDispatch}
+    from "react-redux";
+import tuit from "./tuit-item.js";
 
 const TuitStats = () => {
     const liked = true;
     const replies = 123;
     const retuits =432;
     const likes = 2345;
+    const dispatch = useDispatch();
     return (
 
         <div className="row">
@@ -18,7 +22,7 @@ const TuitStats = () => {
                 <i onClick={() => dispatch(updateTuitThunk({
                                                                ...tuit,
                                                                likes: tuit.likes + 1
-                                                           })} className="bi bi-heart-fill me-2 text-danger"></i>
+                                                           }))} className="bi bi-heart-fill me-2 text-danger"></i>
             </div>
 
             <div className="col-3"><i className="fa fa-share"></i></div>
