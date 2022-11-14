@@ -1,6 +1,6 @@
 import React from "react";
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import {updateTuitThunk} from "../services/tuits-thunks.js";
+import {updateTuitThunk} from "../../services/tuits-thunks.js";
 import {useDispatch}
     from "react-redux";
 import tuit from "./tuit-item.js";
