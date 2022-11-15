@@ -1,4 +1,4 @@
-import {deleteTuitThunk} from "../../services/tuits-thunks";
+import {deleteTuitThunk} from "../../services/tuits-thunks.js";
 const TuitItem = () => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {

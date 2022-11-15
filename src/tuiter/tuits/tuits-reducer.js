@@ -2,7 +2,7 @@ import {createSlice}
     from "@reduxjs/toolkit";
 import tuits from './tuits.json';
 import {createTuitThunk, deleteTuitThunk, findTuitsThunk}
-    from "../../services/tuits-thunks";
+    from "../../services/tuits-thunks.js";
 
 const initialState = {
     tuits: [],

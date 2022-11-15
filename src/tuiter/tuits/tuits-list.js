@@ -3,9 +3,9 @@ import {useDispatch, useSelector}
     from "react-redux";
 import TuitItem from "./tuit-item.js";
 import {findTuitsThunk}
-    from "../../services/tuits-thunks";
+    from "../../services/tuits-thunks.js";
 
-const TuitsList = () => {
+const TuitsList = async () => {
     const {tuits, loading} = useSelector(
         state => state.tuitsData)
     const dispatch = useDispatch();

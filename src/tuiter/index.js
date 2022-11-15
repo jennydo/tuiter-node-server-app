@@ -4,7 +4,7 @@ import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
 import whoReducer
     from "./reducers/who-reducer";
-import tuitsReducer from "./tuits/tuits-reducer";
+import tuitsReducer from "./tuits/tuits-reducer.js";
 import { configureStore }
     from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
